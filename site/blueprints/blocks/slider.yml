@@ -1,0 +1,19 @@
+name: Slider
+icon: images
+preview: slider
+fields:
+  images:
+    label: Images
+    type: files
+    multiple: true
+    layout: cards
+  autoplay:
+    label: Autoplay
+    type: toggle
+    default: false
+  duration:
+    label: Duration (seconds)
+    type: number
+    default: 5
+    when:
+      autoplay: true

@@ -1,0 +1,13 @@
+{
+  "css/index.css": {
+    "file": "assets/style-Tf_h_ZLq.css",
+    "src": "css/index.css",
+    "isEntry": true
+  },
+  "js/index.js": {
+    "file": "assets/main-CPHGaHrH.js",
+    "name": "main",
+    "src": "js/index.js",
+    "isEntry": true
+  }
+}
