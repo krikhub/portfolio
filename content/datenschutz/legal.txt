@@ -1,0 +1,21 @@
+Title: Datenschutz
+
+----
+
+Text:
+
+## Datenschutzerklärung
+
+Verantwortlich für die Datenverarbeitung:
+[Ihr Name]
+[Ihre Adresse]
+
+Diese Datenschutzerklärung klärt Sie über die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten auf.
+
+----
+
+Template: legal
+
+----
+
+Uuid: jlo5ifxobgwnxmhb

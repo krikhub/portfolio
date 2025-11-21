@@ -7,17 +7,19 @@
 # The layout of this form has two columns:
 columns:
   # The first column has one section for the subpages of the `photography` page in card layout
-  # It reuses the pages section defined in `/site/blueprints/sections/albums.yml`
   - width: 1/2
     sections:
-      albums: sections/albums
+      albums:
+        extends: sections/albums
+        parent: site.find("portfolio")
 
   # The second column has two sections, `notes` and `pages`
   - width: 1/2
     sections:
-      # The `notes` section reuses the pages section defined in `/site/blueprints/sections/notes.yml`
+      # The `notes` section
       notes:
         extends: sections/notes
+        parent: site.find("blog")
         status: listed
 
       # The `pages` pages section shows other main pages of the site
@@ -32,3 +34,4 @@ columns:
           - about
           - home
           - default
+          - legal

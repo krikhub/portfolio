@@ -58,6 +58,18 @@
   background: rgba(0,0,0, .5);
 }
 
+.home-video {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.home-video video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 @media screen and (min-width: 45em) {
   .home-grid {
     grid-template-columns: repeat(3, 1fr);

@@ -1,0 +1,12 @@
+title: Legal Page
+
+icon: 📄
+
+options:
+  changeSlug: false
+
+fields:
+  text:
+    label: Text
+    type: textarea
+    size: large

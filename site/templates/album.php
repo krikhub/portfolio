@@ -43,5 +43,45 @@
       </ul>
     </div>
 
+  </div>
+
+  <nav class="album-navigation">
+    <?php if ($prev = $page->prev()): ?>
+    <a href="<?= $prev->url() ?>" class="album-nav-prev">
+      <span>← Vorheriges</span>
+      <small><?= $prev->title()->esc() ?></small>
+    </a>
+    <?php else: ?>
+    <span></span>
+    <?php endif ?>
+
+    <?php if ($next = $page->next()): ?>
+    <a href="<?= $next->url() ?>" class="album-nav-next">
+      <span>Nächstes →</span>
+      <small><?= $next->title()->esc() ?></small>
+    </a>
+    <?php endif ?>
+  </nav>
+
 </article>
+
+<script>
+document.addEventListener('keydown', function(e) {
+  // Left arrow key
+  if (e.key === 'ArrowLeft') {
+    const prevLink = document.querySelector('.album-nav-prev');
+    if (prevLink) {
+      window.location.href = prevLink.href;
+    }
+  }
+  // Right arrow key
+  if (e.key === 'ArrowRight') {
+    const nextLink = document.querySelector('.album-nav-next');
+    if (nextLink) {
+      window.location.href = nextLink.href;
+    }
+  }
+});
+</script>
+
 <?php snippet('footer') ?>

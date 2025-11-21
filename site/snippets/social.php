@@ -12,16 +12,10 @@
 */
 ?>
 <span class="social">
-  <a href="https://mastodon.social/@getkirby" aria-label="Follow us on Mastodon">
-    <?= svg('assets/icons/mastodon.svg') ?>
+  <a href="https://github.com/krikhub" aria-label="Schau dir mein Github an">
+    <?= svg('assets/icons/github.svg') ?>
   </a>
-  <a href="https://instagram.com/getkirby" aria-label="Follow us on Instagram">
-    <?= svg('assets/icons/instagram.svg') ?>
-  </a>
-  <a href="https://youtube.com/kirbycasts" aria-label="Watch our videos on YouTube">
-    <?= svg('assets/icons/youtube.svg') ?>
-  </a>
-  <a href="https://chat.getkirby.com" aria-label="Chat with us on Discord">
-    <?= svg('assets/icons/discord.svg') ?>
+  <a href="https://de.linkedin.com/in/alexander-krikun-905a24231" aria-label="Connecte dich mit mir auf Linkedin">
+    <?= svg('assets/icons/linkedin.svg') ?>
   </a>
 </span>

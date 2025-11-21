@@ -13,3 +13,41 @@
     columns: 2;
   }
 }
+
+.album-navigation {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 6rem;
+  padding-top: 3rem;
+  border-top: 2px solid var(--color-light);
+}
+
+.album-navigation a {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.album-navigation a:hover {
+  opacity: 0.6;
+}
+
+.album-nav-prev {
+  text-align: left;
+}
+
+.album-nav-next {
+  text-align: right;
+  margin-left: auto;
+}
+
+.album-navigation span {
+  font-weight: 600;
+}
+
+.album-navigation small {
+  color: var(--color-text-grey);
+}

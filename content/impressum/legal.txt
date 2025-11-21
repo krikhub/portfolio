@@ -1,0 +1,22 @@
+Title: Impressum
+
+----
+
+Text:
+
+Angaben gemäß § 5 TMG
+
+[Ihr Name]
+[Ihre Adresse]
+[PLZ Ort]
+
+Kontakt:
+E-Mail: [ihre@email.de]
+
+----
+
+Template: legal
+
+----
+
+Uuid: yufmxe7rmzjkgncd

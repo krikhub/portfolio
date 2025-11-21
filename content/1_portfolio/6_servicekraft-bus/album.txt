@@ -1,0 +1,25 @@
+Title: Servicekraft Bus
+
+----
+
+Cover: - 'file://n3shf4xe97rza2kt'
+
+----
+
+Headline: Servicekraft Bus
+
+----
+
+Subheadline: Arbeitsvermittlung im Busgewerbe
+
+----
+
+Text: <p>Das Ziel war, für „Servicekraft Bus“ eine seriöse und zugleich moderne Online-Präsenz zu entwickeln, die das Unternehmen als spezialisierten Partner für die Vermittlung von Busfahrerinnen und Busfahrern positioniert. Die Webseite sollte klar die Dienstleistungen für Arbeitnehmer und Arbeitgeber darstellen und beiden Zielgruppen eine strukturierte und einfache Möglichkeit bieten, sich zu informieren, Stellenangebote zu finden und direkt Kontakt aufzunehmen.</p><p><a href="https://www.servicekraft-bus.de">www.servicekraft-bus.de</a></p><p><strong>Umsetzung</strong>:</p><ul><li><p>Design der Webseite</p></li><li><p>Bau und technische Umsetzung der Seite</p></li><li><p>Pflege von Text- und Content-Elementen</p></li></ul><p><strong>WordPress CMS</strong></p>
+
+----
+
+Tags: stars, universe, up there
+
+----
+
+Uuid: EWQEPJBB2Xyrrrj6

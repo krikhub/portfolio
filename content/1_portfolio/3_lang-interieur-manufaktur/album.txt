@@ -1,0 +1,25 @@
+Title: Lang Interieur Manufaktur
+
+----
+
+Cover: []
+
+----
+
+Headline: 
+
+----
+
+Subheadline: Manufaktur für hochwertige Innenausstattung
+
+----
+
+Text: <p>Das Ziel war, für „Lang Interieur Manufaktur“ eine moderne und hochwertige Webpräsenz zu entwickeln, die die handwerkliche Qualität und den Designanspruch des Unternehmens widerspiegelt. Die Webseite sollte die Projekte und Leistungen klar präsentieren und Interessenten eine intuitive Möglichkeit bieten, sich zu informieren und Kontakt aufzunehmen.<br><br><a href="https://www.lang-manufaktur.de/de/">lang-manufaktur.de</a></p><p><strong>Umsetzung:</strong></p><ul><li><p>Frontend-Programmierung</p></li></ul><p><strong>Next.js · React</strong></p>
+
+----
+
+Tags: Next.js, React
+
+----
+
+Uuid: 7g1yxofkmalq7oac

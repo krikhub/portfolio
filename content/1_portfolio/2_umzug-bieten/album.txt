@@ -1,0 +1,25 @@
+Title: Umzug Bieten
+
+----
+
+Cover: - 'file://b23wgrlqicdzeeqo'
+
+----
+
+Headline: Umzug Bieten
+
+----
+
+Subheadline: Umzugsfirma aus Berlin Neuköln
+
+----
+
+Text: <p>Das Ziel war, bei der Erstellung der Webseite für „Umzug Bieten“ eine moderne und benutzerfreundliche Online-Präsenz für die renommierte Umzugsfirma in Berlin-Neukölln zu schaffen. Die Webseite sollte dabei nicht nur das professionelle Image von Umzug Bieten widerspiegeln, sondern auch eine Plattform bieten, auf der Kunden schnell und unkompliziert Informationen finden und Umzugsdienstleistungen buchen können.<br><br><strong>Umsetzung</strong>:</p><ul><li><p>Design der Webseite</p></li><li><p>Bau und technische Umsetzung der Seite</p></li><li><p>Pflege von Text- und Content-Elementen</p></li></ul><p><strong>WordPress CMS</strong><br></p>
+
+----
+
+Tags: 
+
+----
+
+Uuid: v59sIVPYM141Uotu
