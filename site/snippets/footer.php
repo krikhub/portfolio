@@ -23,6 +23,7 @@
     'assets/js/prism.js',
     'assets/js/lightbox.js',
     'assets/js/slider.js',
+    'assets/js/cursor.js',
     'assets/js/index.js',
     '@auto'
   ]) ?>

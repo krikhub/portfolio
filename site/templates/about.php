@@ -24,6 +24,9 @@
 <?php snippet('intro') ?>
 <?php snippet('layouts', ['field' => $page->layout()])  ?>
 
+<?php snippet('skills') ?>
+
+<?php if ($page->showContact()->toBool()): ?>
 <aside class="contact">
   <h2 class="h1">Get in contact</h2>
   <div class="grid" style="--gutter: 1.5rem">
@@ -47,5 +50,6 @@
     </section>
   </div>
 </aside>
+<?php endif ?>
 
 <?php snippet('footer') ?>

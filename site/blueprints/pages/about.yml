@@ -52,10 +52,55 @@ tabs:
   # each column has a set of fields
   # More about columns:
   # https://getkirby.com/docs/guide/blueprints/layout#defining-columns
+  skills:
+    icon: 🎯
+    label: Skills
+    fields:
+      showSkills:
+        label: Skills Sichtbarkeit
+        type: toggle
+        default: true
+        text:
+          - Momentan ausgeblendet
+          - Momentan sichtbar
+      skills:
+        label: Fähigkeiten
+        type: structure
+        when:
+          showSkills: true
+        fields:
+          category:
+            label: Kategorie
+            type: text
+            width: 1/1
+          items:
+            label: Skills
+            type: structure
+            fields:
+              name:
+                label: Skill Name
+                type: text
+                width: 2/3
+              level:
+                label: Level (1-5)
+                type: number
+                min: 1
+                max: 5
+                step: 1
+                width: 1/3
   contact:
     icon: map
     label: Contact
     columns:
+      - width: 1/1
+        fields:
+          showContact:
+            label: Kontakt Sichtbarkeit
+            type: toggle
+            default: true
+            text:
+              - Momentan ausgeblendet
+              - Momentan sichtbar
       - width: 1/2
         # Kirby has many different field types, from simple text fields to the more complex structure field that contains subfields
         # All available field types: https://getkirby.com/docs/reference/panel/fields

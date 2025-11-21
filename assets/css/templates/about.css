@@ -1,7 +1,83 @@
-.contact {
-  padding: 3rem;
-  border: 2px solid #000;
+.skills-section {
+  margin: 6rem 0;
+  padding: 0;
+  background: var(--color-white);
 }
-.contact .h1 {
-  margin-bottom: 1.5rem;
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 4rem;
+}
+
+.skills-category {
+  position: relative;
+}
+
+.skills-category-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: var(--color-black);
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.skill-name {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--color-black);
+  margin-bottom: 0.25rem;
+}
+
+.skill-bar-container {
+  width: 100%;
+  height: 8px;
+  background: var(--color-light);
+  overflow: hidden;
+  position: relative;
+}
+
+.skill-bar {
+  height: 100%;
+  background: var(--color-black);
+  width: 0;
+  transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .skills-section {
+    padding: 2rem 1.5rem;
+  }
+}
+
+.contact {
+  background: var(--color-light);
+  padding: 3rem;
+  margin-top: 6rem;
+}
+
+.contact h2 {
+  margin-bottom: 3rem;
+}
+
+.contact h3 {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
 }
