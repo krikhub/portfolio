@@ -7,7 +7,7 @@
  * https://getkirby.com/docs/guide/templates/collections
  */
 return function () {
-    return page('blog')
+    return page('notes')
         ->children()
         ->listed()
         ->sortBy('date', 'desc');

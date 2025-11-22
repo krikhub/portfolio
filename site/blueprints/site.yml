@@ -19,7 +19,7 @@ columns:
       # The `notes` section
       notes:
         extends: sections/notes
-        parent: site.find("blog")
+        parent: site.find("notes")
         status: listed
 
       # The `pages` pages section shows other main pages of the site

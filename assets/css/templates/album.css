@@ -31,9 +31,7 @@
   transition: opacity 0.2s;
 }
 
-.album-navigation a:hover {
-  opacity: 0.6;
-}
+
 
 .album-nav-prev {
   text-align: left;

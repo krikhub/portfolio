@@ -367,9 +367,7 @@ hr {
   text-decoration: none;
 }
 
-.footer-nav a:hover {
-  color: var(--color-text);
-}
+
 
 
 .map {
@@ -436,11 +434,7 @@ hr {
   border: 2px solid currentColor;
   margin-right: 1.5rem;
 }
-.pagination > a:hover {
-  background: var(--color-black);
-  color: var(--color-white);
-  border-color: var(--color-black);
-}
+
 
 .note-excerpt {
   line-height: 1.5em;
