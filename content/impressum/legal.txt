@@ -4,14 +4,17 @@ Title: Impressum
 
 Text:
 
-Angaben gemäß § 5 TMG
+Angaben zum Impressum:
+Alexander Krikun
+Kortmannstraße 4
+33609 Bielefeld
+Deutschland
 
-[Ihr Name]
-[Ihre Adresse]
-[PLZ Ort]
+Tel.: 01573 2609073
+E-Mail: info@alexanderkrikun.de
 
-Kontakt:
-E-Mail: [ihre@email.de]
+Plattform der EU-Kommission zur Online-Streitbeilegung: https://ec.europa.eu/odr
+Wir sind zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle weder verpflichtet noch bereit.
 
 ----
 

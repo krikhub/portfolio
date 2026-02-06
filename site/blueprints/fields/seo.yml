@@ -1,0 +1,20 @@
+type: group
+fields:
+  metaTitle:
+    label: Meta Title
+    type: text
+    help: Optimal 50-60 Zeichen. Leer lassen für automatischen Titel.
+    counter: true
+    maxlength: 60
+  metaDescription:
+    label: Meta Description
+    type: textarea
+    help: Optimal 150-160 Zeichen
+    counter: true
+    maxlength: 160
+    rows: 3
+  ogImage:
+    label: Social Media Bild
+    type: files
+    max: 1
+    help: Empfohlen 1200x630px. Wird auf Facebook, Twitter, LinkedIn etc. angezeigt

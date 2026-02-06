@@ -10,4 +10,16 @@ Subheadline: Performante, wartbare Websites mit moderner Technologie
 
 ----
 
+Metatitle: Kirby CMS & Webentwicklung in Hamburg – AK Freelancer
+
+----
+
+Metadescription: Kirby CMS & Webentwicklung aus Hamburg – AK, Ihr Freelance Webentwickler. Moderne Websites, Kirby CMS, WordPress, Elementor & WooCommerce für Ihr Projekt.
+
+----
+
+Ogimage: []
+
+----
+
 Uuid: wljMYhm0m3e9QOwC

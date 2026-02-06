@@ -2,7 +2,7 @@ Title: About
 
 ----
 
-Layout: [{"attrs":[],"columns":[{"blocks":[{"content":{"text":"Hi, ich bin Alex – Freelance Webentwickler aus Hamburg mit \nFokus auf performante, wartbare Websites.\n\n## Mein Ansatz\n\nNach umfangreicher Erfahrung mit WordPress und Statamic habe ich \nmich auf **Kirby CMS** spezialisiert. Warum? Weil moderne Unternehmen \nkeine aufgeblähten Content Management Systeme brauchen, sondern \nschnelle, sichere und individuell angepasste Lösungen.\n\n## Was ich mache\n\nIch entwickle maßgeschneiderte Websites für B2B-Unternehmen und \nTech-Startups – ohne Template-Kompromisse, ohne Plugin-Chaos, \nohne unnötigen Overhead. Jedes Projekt wird individuell auf die \nAnforderungen meiner Kunden zugeschnitten.\n\n**Technologien:** Kirby CMS, PHP, Tailwind CSS, Alpine.js, Git"},"id":"eafe7cfb-3fb5-4b00-93ec-cb06ab99a562","isHidden":false,"type":"markdown"}],"id":"552a9c03-3808-4c76-b15a-248e66d562a7","width":"1/2"},{"blocks":[{"content":{"text":"## Warum Kirby?\n\n- **Schnell:** Flat-File-Architektur, keine Datenbank, < 1s Ladezeit\n- **Sicher:** Keine bekannten Sicherheitslücken wie bei WordPress\n- **Flexibel:** Jedes Content-Feld exakt nach Ihren Anforderungen\n- **Wartbar:** Sauberer Code, Git-basiert, einfach zu pflegen\n\n## Kontakt\n\n<section id=\"contact\">\n  <span><strong>E-Mail:</strong> <a href=\"mailto:info@alexanderkrikun.de\">info@alexanderkrikun.de</a></span><br>\n  <span><strong>Telefon:</strong> <a href=\"tel:+4915732609073\">+49 1573 2609073</a></span><br>\n  <span><strong>Standort:</strong> Hamburg, Deutschland</span><br>\n  <span><strong>Sprachen:</strong> Deutsch, Englisch, Russisch</span><br>\n  <span><strong>Status:</strong> Verfügbar für neue Projekte</span>\n</section>"},"id":"bee118e3-8fa4-4e4c-9bae-bfddb3cfdd3e","isHidden":false,"type":"markdown"}],"id":"dccc73dc-5de5-45b5-9717-2fdaa10d252c","width":"1/2"}],"id":"b591b753-0669-48ee-a841-c7172eca48bd"}]
+Layout: [{"attrs":[],"columns":[{"blocks":[{"content":{"text":"Hi, ich bin Alex – Freelance Webentwickler aus Hamburg mit \nFokus auf performante, wartbare Websites.\n\n## Mein Ansatz\n\nNach umfangreicher Erfahrung mit WordPress und Statamic habe ich \nmich auf **Kirby CMS** spezialisiert. Warum? Weil moderne Unternehmen \nkeine aufgeblähten Content Management Systeme brauchen, sondern \nschnelle, sichere und individuell angepasste Lösungen.\n\n## Was ich mache\n\nIch entwickle maßgeschneiderte Websites für B2B-Unternehmen und \nTech-Startups – ohne Template-Kompromisse, ohne Plugin-Chaos, \nohne unnötigen Overhead. Jedes Projekt wird individuell auf die \nAnforderungen meiner Kunden zugeschnitten.\n\n**Technologien:** PHP, Tailwind CSS, Vue.js, React, Git\n**CMS:** Statamic, Kirby CMS, Wordpress"},"id":"eafe7cfb-3fb5-4b00-93ec-cb06ab99a562","isHidden":false,"type":"markdown"}],"id":"552a9c03-3808-4c76-b15a-248e66d562a7","width":"1/2"},{"blocks":[{"content":{"text":"## Warum Kirby?\n\n- **Schnell:** Flat-File-Architektur, keine Datenbank, < 1s Ladezeit\n- **Sicher:** Keine bekannten Sicherheitslücken wie bei WordPress\n- **Flexibel:** Jedes Content-Feld exakt nach Ihren Anforderungen\n- **Wartbar:** Sauberer Code, Git-basiert, einfach zu pflegen\n\n## Kontakt\n\n<section id=\"contact\">\n  <span><strong>E-Mail:</strong> <a href=\"mailto:info@alexanderkrikun.de\">info@alexanderkrikun.de</a></span><br>\n  <span><strong>Telefon:</strong> <a href=\"tel:+4915732609073\">+49 1573 2609073</a></span><br>\n  <span><strong>Standort:</strong> Hamburg, Deutschland</span><br>\n  <span><strong>Sprachen:</strong> Deutsch, Englisch, Russisch</span><br>\n  <span><strong>Status:</strong> Verfügbar für neue Projekte</span>\n</section>"},"id":"bee118e3-8fa4-4e4c-9bae-bfddb3cfdd3e","isHidden":false,"type":"markdown"}],"id":"dccc73dc-5de5-45b5-9717-2fdaa10d252c","width":"1/2"}],"id":"b591b753-0669-48ee-a841-c7172eca48bd"}]
 
 ----
 
@@ -57,6 +57,18 @@ Skills:
     -
       name: Elementor
       level: 4.0
+
+----
+
+Metatitle: 
+
+----
+
+Metadescription: 
+
+----
+
+Ogimage: []
 
 ----
 

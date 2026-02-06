@@ -1,0 +1,25 @@
+Title: MGR Personal
+
+----
+
+Cover: - 'file://1nj6iqbmiv7kqk2o'
+
+----
+
+Headline: MGR Personal
+
+----
+
+Subheadline: Personaldienstleister aus Landshut
+
+----
+
+Text: <p>Für die Erstellung der Webseite von <strong>MGR Personal</strong> war das Ziel, eine moderne, professionelle und klar strukturierte Online‑Präsenz für den Personaldienstleister aus Landshut zu entwickeln. Die Seite sollte das Leistungsspektrum – insbesondere <strong>Arbeitnehmerüberlassung und Personalvermittlung</strong> – verständlich darstellen und gleichzeitig Vertrauen bei Bewerber:innen und Unternehmen schaffen. Zudem war es wichtig, dass Nutzer schnell und unkompliziert Informationen finden und Kontakt aufnehmen können.</p><h3>Umsetzung:</h3><ul><li><p><strong>Design der Webseite</strong> – modernes, benutzerfreundliches Layout</p></li><li><p><strong>Technische Umsetzung</strong> – responsive und performance‑optimierte Website</p></li><li><p><strong>Pflege von Text‑ und Content‑Elementen</strong> – zielgruppengerechte Inhalte</p></li><li><p><strong>WordPress CMS</strong> – einfache Redaktions‑ und Verwaltungsoberfläche für den Kunden</p></li></ul>
+
+----
+
+Tags: Wordpress
+
+----
+
+Uuid: 1zrufq9i4cjufwv6

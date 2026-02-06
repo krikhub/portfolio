@@ -19,12 +19,40 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
   <?php
-  /*
-    In the title tag we show the title of our
-    site and the title of the current page
-  */
+  // SEO Meta Tags
+  $metaTitle = $page->metaTitle()->isNotEmpty() 
+    ? $page->metaTitle()->esc() 
+    : $page->title()->esc() . ' | ' . $site->title()->esc();
+  
+  $metaDescription = $page->metaDescription()->isNotEmpty() 
+    ? $page->metaDescription()->esc() 
+    : $site->title()->esc();
+  
+  $ogImage = $page->ogImage()->toFile() 
+    ? $page->ogImage()->toFile()->url() 
+    : null;
   ?>
-  <title><?= $site->title()->esc() ?> | <?= $page->title()->esc() ?></title>
+
+  <title><?= $metaTitle ?></title>
+  <meta name="description" content="<?= $metaDescription ?>">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="<?= $page->url() ?>">
+  <meta property="og:title" content="<?= $metaTitle ?>">
+  <meta property="og:description" content="<?= $metaDescription ?>">
+  <?php if ($ogImage): ?>
+  <meta property="og:image" content="<?= $ogImage ?>">
+  <?php endif ?>
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="<?= $page->url() ?>">
+  <meta property="twitter:title" content="<?= $metaTitle ?>">
+  <meta property="twitter:description" content="<?= $metaDescription ?>">
+  <?php if ($ogImage): ?>
+  <meta property="twitter:image" content="<?= $ogImage ?>">
+  <?php endif ?>
 
   <?php
   /*
