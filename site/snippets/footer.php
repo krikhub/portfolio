@@ -10,6 +10,7 @@
 */
 ?>
   </main>
+  fdsfsdfdsfdfs
 
   <footer class="footer">
     <nav class="footer-nav">
@@ -20,6 +21,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   <?= js([
+    'assets/js/burger.js',
     'assets/js/prism.js',
     'assets/js/lightbox.js',
     'assets/js/slider.js',

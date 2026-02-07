@@ -81,35 +81,33 @@
 <body>
 
   <header class="header">
-    <?php
-    /*
-      We use `$site->url()` to create a link back to the homepage
-      for the logo and `$site->title()` as a temporary logo. You
-      probably want to replace this with an SVG.
-    */
-    ?>
     <a class="logo" href="<?= $site->url() ?>">
       <?= $site->title()->esc() ?>
     </a>
 
+    <button class="burger" aria-label="Menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
     <nav class="menu">
-      <?php
-      /*
-        In the menu, we only fetch listed pages,
-        i.e. the pages that have a prepended number
-        in their foldername.
-
-        We do not want to display links to unlisted
-        `error`, `home`, or `sandbox` pages.
-
-        More about page status:
-        https://getkirby.com/docs/reference/panel/blueprints/page#statuses
-      */
-      ?>
-      <?php foreach ($site->children()->listed() as $item): ?>
-      <a <?php e($item->isOpen(), 'aria-current="page"') ?> href="<?= $item->url() ?>"><?= $item->title()->esc() ?></a>
-      <?php endforeach ?>
-      <?php snippet('social') ?>
+      <div class="menu-links">
+        <?php foreach ($site->children()->listed() as $item): ?>
+        <a <?php e($item->isOpen(), 'aria-current="page"') ?> href="<?= $item->url() ?>"><?= $item->title()->esc() ?></a>
+        <?php endforeach ?>
+      </div>
+      <div class="menu-social">
+        <?php snippet('social') ?>
+      </div>
+      <div class="menu-mobile-icons">
+        <a href="https://github.com/krikhub" class="menu-icon-link" aria-label="Github">
+          <?= svg('assets/icons/github.svg') ?>
+        </a>
+        <a href="https://de.linkedin.com/in/alexander-krikun-905a24231" class="menu-icon-link" aria-label="LinkedIn">
+          <?= svg('assets/icons/linkedin.svg') ?>
+        </a>
+      </div>
     </nav>
   </header>
 
