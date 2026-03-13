@@ -2,23 +2,23 @@ Title: Home
 
 ----
 
-Headline: Freelance Webentwickler in Hamburg
+Headline: Freelance Webentwickler – flexibel, zuverlässig, einsatzbereit
 
 ----
 
-Subheadline: Performante, wartbare Websites mit moderner Technologie
+Subheadline: Unterstützung für Webprojekte auf Abruf oder über mehrere Wochen – PHP, React, WordPress & mehr
 
 ----
 
-Metatitle: Kirby CMS & Webentwicklung in Hamburg – AK Freelancer
+Metatitle: Freelance Webentwickler – flexibel & projektbasiert
 
 ----
 
-Metadescription: Kirby CMS & Webentwicklung aus Hamburg – AK, Ihr Freelance Webentwickler. Moderne Websites, Kirby CMS, WordPress, Elementor & WooCommerce für Ihr Projekt.
+Metadescription: Freelance Webentwickler für Agenturen & Unternehmen – kurzfristig verfügbar oder projektbasiert für mehrere Wochen. PHP, React, WordPress & mehr.
 
 ----
 
-Ogimage: []
+Ogimage: 
 
 ----
 

@@ -1,0 +1,37 @@
+Title: Chatt Coffee
+
+----
+
+Cover: - file://sdnzedazqcgvjkko
+
+----
+
+Headline: Chatt Coffee
+
+----
+
+Subheadline: Online-Shop für Kaffeeprodukte
+
+----
+
+Text: <p>Ziel bei der Erstellung der Webseite für Chatt Coffee war es, eine moderne und ansprechende E-Commerce-Präsenz für den Kaffee-Shop zu schaffen. Die Webseite sollte nicht nur das hochwertige Image der Marke widerspiegeln, sondern auch eine benutzerfreundliche Plattform bieten, auf der Kund:innen unkompliziert Produkte entdecken, auswählen und direkt online bestellen können.</p><p><a href="https://chatt-coffee.com/">chatt-coffee.com</a></p><p><strong>Umsetzung:</strong></p><ul><li><p>Design der Webseite – modernes, übersichtliches Layout mit ansprechender Produktpräsentation</p></li><li><p>Technische Umsetzung – WooCommerce-Shop auf WordPress, responsive für alle Endgeräte</p></li><li><p>Pflege von Text- und Content-Elementen – Produktbeschreibungen, Bilder, Blog-Inhalte</p></li><li><p>Integration von Zahlungs- und Versandoptionen – komfortable Checkout-Prozesse für Kund:innen</p></li></ul><p><strong>Wordpress · Javascript · WooCommerce</strong></p>
+
+----
+
+Tags: 
+
+----
+
+Metatitle: 
+
+----
+
+Metadescription: 
+
+----
+
+Ogimage: 
+
+----
+
+Uuid: ayutjvjiphuaidpf

@@ -10,7 +10,6 @@
 */
 ?>
   </main>
-  fdsfsdfdsfdfs
 
   <footer class="footer">
     <nav class="footer-nav">

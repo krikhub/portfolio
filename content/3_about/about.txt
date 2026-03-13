@@ -2,7 +2,7 @@ Title: About
 
 ----
 
-Layout: [{"attrs":[],"columns":[{"blocks":[{"content":{"text":"Hi, ich bin Alex – Freelance Webentwickler aus Hamburg mit \nFokus auf performante, wartbare Websites.\n\n## Mein Ansatz\n\nNach umfangreicher Erfahrung mit WordPress und Statamic habe ich \nmich auf **Kirby CMS** spezialisiert. Warum? Weil moderne Unternehmen \nkeine aufgeblähten Content Management Systeme brauchen, sondern \nschnelle, sichere und individuell angepasste Lösungen.\n\n## Was ich mache\n\nIch entwickle maßgeschneiderte Websites für B2B-Unternehmen und \nTech-Startups – ohne Template-Kompromisse, ohne Plugin-Chaos, \nohne unnötigen Overhead. Jedes Projekt wird individuell auf die \nAnforderungen meiner Kunden zugeschnitten.\n\n**Technologien:** PHP, Tailwind CSS, Vue.js, React, Git\n**CMS:** Statamic, Kirby CMS, Wordpress"},"id":"eafe7cfb-3fb5-4b00-93ec-cb06ab99a562","isHidden":false,"type":"markdown"}],"id":"552a9c03-3808-4c76-b15a-248e66d562a7","width":"1/2"},{"blocks":[{"content":{"text":"## Warum Kirby?\n\n- **Schnell:** Flat-File-Architektur, keine Datenbank, < 1s Ladezeit\n- **Sicher:** Keine bekannten Sicherheitslücken wie bei WordPress\n- **Flexibel:** Jedes Content-Feld exakt nach Ihren Anforderungen\n- **Wartbar:** Sauberer Code, Git-basiert, einfach zu pflegen\n\n## Kontakt\n\n<section id=\"contact\">\n  <span><strong>E-Mail:</strong> <a href=\"mailto:info@alexanderkrikun.de\">info@alexanderkrikun.de</a></span><br>\n  <span><strong>Telefon:</strong> <a href=\"tel:+4915732609073\">+49 1573 2609073</a></span><br>\n  <span><strong>Standort:</strong> Hamburg, Deutschland</span><br>\n  <span><strong>Sprachen:</strong> Deutsch, Englisch, Russisch</span><br>\n  <span><strong>Status:</strong> Verfügbar für neue Projekte</span>\n</section>"},"id":"bee118e3-8fa4-4e4c-9bae-bfddb3cfdd3e","isHidden":false,"type":"markdown"}],"id":"dccc73dc-5de5-45b5-9717-2fdaa10d252c","width":"1/2"}],"id":"b591b753-0669-48ee-a841-c7172eca48bd"}]
+Layout: [{"attrs":[],"columns":[{"blocks":[{"content":{"text":"Hi, ich bin Alex – Freelance Webentwickler aus Hamburg. Ich unterstütze Agenturen und Unternehmen flexibel auf Abruf oder projektbasiert – kurzfristig einspringen, direkt nach Briefing loslegen, schnell Ergebnisse liefern.\n\n## Mein Ansatz\n\nIch arbeite als Leiharbeiter im Entwicklungsbereich: flexibel, schnell einsatzbereit und anpassungsfähig an bestehende Teams. Für jedes Projekt wähle ich die passende Technologie – egal ob WordPress, Statamic, Kirby CMS, PHP, React oder Vue.js. Mein Fokus liegt auf **performanten, wartbaren und sauberen Lösungen**, die direkt produktiv nutzbar sind.\n\nIch übernehme Aufgaben auf Abruf, unterstütze kurzfristig bei Engpässen oder begleite Projekte über mehrere Wochen – genau so, wie es dein Team gerade braucht.\n\n## Was ich mache\n\nIch entwickle maßgeschneiderte Weblösungen für Agenturen, Unternehmen und Startups – ohne Template-Kompromisse oder unnötigen Overhead. Egal ob kleine Features, Bugfixes oder komplette Projektphasen, ich springe direkt nach Briefing ein und arbeite effizient in deinem Workflow.\n\n**Technologien:** PHP, Laravel, Tailwind CSS, Vue.js, React, Git  \n**CMS:** WordPress, Statamic, Kirby CMS"},"id":"eafe7cfb-3fb5-4b00-93ec-cb06ab99a562","isHidden":false,"type":"markdown"}],"id":"552a9c03-3808-4c76-b15a-248e66d562a7","width":"1/2"},{"blocks":[{"content":{"text":"## Warum ich?\n\n- **Flexibel:** Springe kurzfristig ein – kleine Features oder komplette Projektphasen  \n- **Effizient:** Nach Briefing direkt startklar, schnelle Umsetzung ohne Verzögerungen  \n- **Teamorientiert:** Arbeite nahtlos in bestehenden Workflows von Agenturen und Unternehmen  \n- **Zuverlässig:** Sauberer, wartbarer Code und moderne Technologien für langfristige Stabilität  \n- **Freelance-Vorteil:** Keine Festanstellung nötig, flexibel buchbar, schnelle Projektintegration  \n\n## Kontakt\n\n<section id=\"contact\">\n  <span><strong>E-Mail:</strong> <a href=\"mailto:info@alexanderkrikun.de\">info@alexanderkrikun.de</a></span><br>\n  <span><strong>Telefon:</strong> <a href=\"tel:+4915732609073\">+49 1573 2609073</a></span><br>\n  <span><strong>Standort:</strong> Hamburg, Deutschland</span><br>\n  <span><strong>Sprachen:</strong> Deutsch, Englisch, Russisch</span><br>\n  <span><strong>Status:</strong> Kurzfristig verfügbar für Projekte & Team-Unterstützung</span>\n</section>"},"id":"bee118e3-8fa4-4e4c-9bae-bfddb3cfdd3e","isHidden":false,"type":"markdown"}],"id":"dccc73dc-5de5-45b5-9717-2fdaa10d252c","width":"1/2"}],"id":"b591b753-0669-48ee-a841-c7172eca48bd"}]
 
 ----
 
@@ -12,63 +12,63 @@ Showskills: false
 
 Skills:
 
--
+- 
   category: Designfähigkeiten
   items:
-    -
-      name: 'Print Design'
-      level: 4.0
-    -
-      name: 'Web Design'
-      level: 5.0
-    -
-      name: 'Grafik Design'
-      level: 4.0
--
+    - 
+      name: Print Design
+      level: 4
+    - 
+      name: Web Design
+      level: 5
+    - 
+      name: Grafik Design
+      level: 4
+- 
   category: Programmierkenntnisse
   items:
-    -
+    - 
       name: JavaScript
-      level: 5.0
-    -
+      level: 5
+    - 
       name: HTML5
-      level: 5.0
-    -
+      level: 5
+    - 
       name: Python
-      level: 3.0
-    -
+      level: 3
+    - 
       name: CSS3
-      level: 5.0
-    -
+      level: 5
+    - 
       name: Vue.js
-      level: 4.0
-    -
+      level: 4
+    - 
       name: PHP
-      level: 4.0
--
+      level: 4
+- 
   category: CMS
   items:
-    -
+    - 
       name: WooCommerce
-      level: 4.0
-    -
+      level: 4
+    - 
       name: WordPress
-      level: 5.0
-    -
+      level: 5
+    - 
       name: Elementor
-      level: 4.0
+      level: 4
 
 ----
 
-Metatitle: 
+Metatitle: Alexander Krikun – Über mich
 
 ----
 
-Metadescription: 
+Metadescription: Über Alexander Krikun: Freelance Webentwickler aus Hamburg. Unterstützt Agenturen & Unternehmen flexibel, projektbasiert oder kurzfristig....
 
 ----
 
-Ogimage: []
+Ogimage: 
 
 ----
 
@@ -90,15 +90,15 @@ Phone: +49 1234 5678
 
 Social:
 
--
+- 
   platform: YouTube
-  url: 'https://youtube.com/kirbycasts'
--
+  url: https://youtube.com/kirbycasts
+- 
   platform: Instagram
-  url: 'https://instagram.com/getkirby'
--
+  url: https://instagram.com/getkirby
+- 
   platform: Discord
-  url: 'https://chat.getkirby.com'
+  url: https://chat.getkirby.com
 
 ----
 

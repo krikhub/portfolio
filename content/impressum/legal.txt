@@ -4,14 +4,21 @@ Title: Impressum
 
 Text:
 
-Angaben zum Impressum:
+Impressum
+
 Alexander Krikun
+Einzelunternehmer / selbständiger Webentwickler
 Kortmannstraße 4
 33609 Bielefeld
 Deutschland
 
-Tel.: 01573 2609073
+Telefon: 01573 2609073
 E-Mail: info@alexanderkrikun.de
+
+Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:
+Alexander Krikun
+
+Als Kleinunternehmer im Sinne von § 19 UStG wird keine Umsatzsteuer berechnet.
 
 Plattform der EU-Kommission zur Online-Streitbeilegung: https://ec.europa.eu/odr
 Wir sind zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle weder verpflichtet noch bereit.
