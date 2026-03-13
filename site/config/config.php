@@ -9,8 +9,24 @@
  */
 return [
     'debug' => true,
-    'yaml.handler' => 'symfony', // already makes use of the more modern Symfony YAML parser: https://getkirby.com/docs/reference/system/options/yaml (will become the default in a future Kirby version)
+    'yaml.handler' => 'symfony',
     'panel' => [
         'language' => 'de'
+    ],
+
+    // Freelancer-Formular: Empfänger-E-Mail
+    'freelancer.email' => 'info@alexanderkrikun.de',  // Hier deine E-Mail-Adresse eintragen
+
+    // SMTP E-Mail-Konfiguration für DomainFactory
+    'email' => [
+        'transport' => [
+            'type' => 'smtp',
+            'host' => 'sslout.df.eu',        // SMTP-Server von DomainFactory
+            'port' => 465,                    // SSL Port
+            'security' => 'ssl',              // SSL/TLS Verschlüsselung
+            'auth' => true,                    // Authentifizierung erforderlich
+            'username' => 'info@alexanderkrikun.de',  // Deine vollständige E-Mail-Adresse
+            'password' => 'Iskander28$$',    // Dein Passwort aus DomainFactory Kundenmenü
+        ]
     ],
 ];

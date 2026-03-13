@@ -1,0 +1,348 @@
+/* Freelancer & Website-Projekt Form Styles */
+
+.freelancer-form {
+  max-width: 36rem;
+  margin: 0 auto;
+}
+
+.freelancer-form,
+.freelancer-form * {
+  cursor: auto !important;
+}
+
+body:has(.freelancer-form) {
+  cursor: auto;
+}
+
+body:has(.freelancer-form) a,
+body:has(.freelancer-form) button,
+body:has(.freelancer-form) input,
+body:has(.freelancer-form) textarea,
+body:has(.freelancer-form) select {
+  cursor: auto;
+}
+
+.freelancer-form .intro {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.freelancer-form .intro h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.freelancer-form .intro p {
+  font-size: 0.875rem;
+  color: var(--color-grey);
+  line-height: 1.5;
+}
+
+/* Progress Steps */
+
+.form-progress {
+  margin: 2rem 0;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--color-light);
+}
+
+.progress-steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  max-width: 28rem;
+  margin: 0 auto;
+}
+
+.progress-steps::before {
+  content: '';
+  position: absolute;
+  top: 1rem;
+  left: 3rem;
+  right: 3rem;
+  height: 1px;
+  background: var(--color-light);
+  z-index: 0;
+}
+
+.progress-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  position: relative;
+  z-index: 1;
+  flex: 1;
+}
+
+.step-number {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--color-white);
+  border: 2px solid var(--color-light);
+  color: var(--color-grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.progress-step.active .step-number {
+  background: var(--color-black);
+  color: var(--color-white);
+  border-color: var(--color-black);
+}
+
+.progress-step.completed .step-number {
+  background: var(--color-black);
+  color: var(--color-white);
+  border-color: var(--color-black);
+}
+
+.progress-step.completed .step-number::after {
+  content: '✓';
+}
+
+.step-label {
+  font-size: 0.7rem;
+  color: var(--color-grey);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.progress-step.active .step-label {
+  color: var(--color-black);
+  font-weight: 600;
+}
+
+/* Form Stages */
+
+.freelancer-form-content {
+  margin-top: 2rem;
+}
+
+.form-stage {
+  display: none;
+}
+
+.form-stage.active {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.form-stage-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Form Fields */
+
+.form-field {
+  margin-bottom: 1.25rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-field > label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--color-black);
+}
+
+.form-field input[type="text"],
+.form-field input[type="email"],
+.form-field input[type="tel"],
+.form-field input[type="date"],
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #ddd;
+  background: var(--color-white);
+  font-family: inherit;
+  font-size: 0.875rem;
+  transition: border-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: var(--color-black);
+}
+
+.form-field input.error,
+.form-field select.error,
+.form-field textarea.error {
+  border-color: #d16464;
+}
+
+.form-field textarea {
+  resize: vertical;
+  min-height: 6rem;
+}
+
+.field-hint {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.75rem;
+  color: var(--color-grey);
+}
+
+/* Checkbox Group */
+
+.checkbox-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.6rem;
+  background: var(--color-light);
+  border: 1px solid var(--color-light);
+  font-size: 0.8rem;
+  transition: border-color 0.2s ease;
+  cursor: pointer;
+}
+
+.checkbox-label:hover {
+  border-color: var(--color-black);
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"]:checked + span {
+  font-weight: 600;
+}
+
+/* Form Actions */
+
+.form-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-light);
+}
+
+.btn-prev {
+  padding: 0.6rem 1.25rem;
+  background: transparent;
+  border: 1px solid var(--color-black);
+  color: var(--color-black);
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-prev:hover {
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+.btn-next,
+.form-actions button[type="submit"] {
+  margin-left: auto;
+  font-size: 0.8rem;
+}
+
+/* Success Message */
+
+.form-success {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  margin: 2rem 0;
+}
+
+.form-success h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.form-success p {
+  margin-bottom: 1.5rem;
+  color: var(--color-grey);
+  font-size: 0.875rem;
+}
+
+/* Error Messages */
+
+.form-errors {
+  background: #ffe5e5;
+  border: 1px solid #d16464;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+  color: #d16464;
+  font-size: 0.8rem;
+}
+
+.form-errors p {
+  margin: 0.25rem 0;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .checkbox-group {
+    grid-template-columns: 1fr;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .btn-next,
+  .form-actions button[type="submit"] {
+    margin-left: 0;
+  }
+
+  .progress-steps {
+    gap: 1.5rem;
+  }
+  
+  .progress-steps::before {
+    left: 2rem;
+    right: 2rem;
+  }
+}
+
+/* CTA Buttons on Homepage */
+
+.cta-buttons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}

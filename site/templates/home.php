@@ -21,6 +21,12 @@
 ?>
 <?php snippet('header') ?>
   <?php snippet('intro') ?>
+  
+  <!-- Freelancer CTA Buttons -->
+  <div class="cta-buttons" style="margin-top: 2rem; margin-bottom: 3rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+    <a href="<?= url('freelancer-anfrage') ?>" class="cta">Freelancer buchen</a>
+    <a href="<?= url('website-projekt-anfragen') ?>" class="cta">Website-Projekt anfragen</a>
+  </div>
 
 </main>
 

@@ -1,4 +1,5 @@
 {
+	"account": "Cont",
 	"account.changeName": "Schimbă-ți numele",
 	"account.delete": "Șterge-ți contul",
 	"account.delete.confirm": "Chiar vrei să îți ștergi contul? Vei fi deconectat imediat. Contul nu poate fi recuperat.",
@@ -15,7 +16,7 @@
 	"changes": "Schimbări",
 	"confirm": "Ok",
 	"collapse": "Pliază",
-	"collapse.all": "Pliază toate",
+	"collapse.all": "Închide toate",
 	"color": "Culoare",
 	"coordinates": "Coordonate",
 	"copy": "Copiază",
@@ -42,6 +43,9 @@
 
 	"delete": "\u0218terge",
 	"delete.all": "Șterge toate",
+
+	"deselect": "Deselectează",
+	"deselect.all": "Deselectează toate",
 
 	"dialog.fields.empty": "Acest dialog nu are niciun câmp",
 	"dialog.files.empty": "Nu există fișiere de selectat",
@@ -294,8 +298,12 @@
 	"error.validation.uuid": "Te rog introdu un UUID valid",
 	"error.validation.url": "Te rog introdu un URL valid",
 
+	"error.version.discard.permission": "Nu ai voie să înlături această versiune",
+	"error.version.publish.permission": "Nu ai voie să publici această versiune",
+	"error.version.save.permission": "Nu ai voie să modifici această versiune",
+
 	"expand": "Extinde",
-	"expand.all": "Extinde toate",
+	"expand.all": "Deschide toate",
 
 	"field.invalid": "Câmpul este nevalid",
 	"field.required": "Acest câmp este necesar",
@@ -376,6 +384,7 @@
 
 	"field.structure.delete.confirm": "Chiar vrei să ștergi acest rând?",
 	"field.structure.delete.confirm.all": "Chiar vrei să ștergi toate înregistrările?",
+	"field.structure.delete.confirm.selected": "Chiar vrei să ștergi toate intrările alese?",
 	"field.structure.empty": "Nicio înregistrare deocamdată",
 
 	"field.users.empty": "Niciun utilizator ales deocamdată",
@@ -474,6 +483,7 @@
 	"license.code": "Cod",
 	"license.code.help": "Ați primit codul de licență după achiziție prin e-mail. Vă rugăm să-l copiați și să-l inserezi aici.",
 	"license.code.label": "Te rog introdu codul tău de licență",
+	"license.remove.text": "<p>Prin înlăturarea licenței se va șterge în mod ireversibil fișierul de licență de pe acest site. Vei putea apoi activa site-ul cu o altă cheie de licență sau să folosești din nou aceeași cheie în caz că domeniul rămâne același.</p><p>Pentru a schimba domeniul asociat licenței, contactează te rog echipa Kirby. <a href='https://getkirby.com/license'>Citește mai multe &rarr;</a></p>",
 	"license.status.active.info": "Include noi versiuni majore până la data de {date}",
 	"license.status.active.label": "Licență validă",
 	"license.status.demo.info": "Aceasta este o instalare demo",
@@ -625,7 +635,9 @@
 	"plugin": "Plugin",
 	"plugins": "Plugin-uri",
 	"prev": "Precedenta",
+
 	"preview": "Previzualizează",
+	"preview.browser.scroll": "Sync scroll",
 
 	"publish": "Publică",
 	"published": "Publicate",
@@ -661,6 +673,7 @@
 
 	"security": "Securitate",
 	"select": "Alege",
+	"select.all": "Alege toate",
 	"server": "Server",
 	"settings": "Reglaje",
 	"show": "Arată",
@@ -769,11 +782,13 @@
 	"user.changePassword.current": "Parola ta curentă",
 	"user.changePassword.new": "Parola nouă",
 	"user.changePassword.new.confirm": "Confirmă parola nouă...",
+	"user.changePassword.own": "Parola proprie",
 	"user.changeRole": "Schimbă rolul",
 	"user.changeRole.select": "Alege un rol nou",
 	"user.create": "Adaugă un nou utilizator",
 	"user.delete": "Șterge acest utilizator",
 	"user.delete.confirm": "Chiar vrei să ștergi <br><strong>{email}</strong>?",
+	"user.setPassword": "Set password",
 
 	"users": "Utilizatori",
 

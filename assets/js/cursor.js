@@ -1,5 +1,10 @@
 // Custom Cursor with GSAP and Blend Mode
 (function() {
+  // Deaktiviere Cursor in Formularen
+  if (document.querySelector('.freelancer-form')) {
+    return;
+  }
+  
   // Create cursor HTML
   const cursorHTML = `
     <div class="cursor">
