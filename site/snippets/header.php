@@ -67,6 +67,13 @@
 </head>
 <body>
 
+<?php if ($page->template()->name() === 'home'): ?>
+<!-- Background animation — outside site-wrapper -->
+<div id="bg-animation" aria-hidden="true"></div>
+<div class="blur-overlay" aria-hidden="true"></div>
+<textarea id="textArea" style="display:none;"></textarea>
+<?php endif ?>
+
 <!-- Mobile overlay menu — outside site-wrapper for correct z-index -->
 <nav class="menu-overlay" id="mobileMenu" role="navigation">
   <div class="menu-overlay-inner">

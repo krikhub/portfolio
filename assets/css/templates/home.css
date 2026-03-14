@@ -224,5 +224,8 @@
 @media screen and (max-width: 768px) {
   .hero { min-height: 65vh; padding: 3rem 0 2rem; }
   .hero-stats { gap: 1.5rem; flex-wrap: wrap; }
-  #bg-animation { display: none; }
+
+  .blur-overlay {
+    background: transparent;
+  }
 }
