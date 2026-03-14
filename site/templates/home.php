@@ -1,10 +1,14 @@
 <?php
 /*
   Home template - Clean Minimal Design
-  Video as visual divider after hero
+  With spacetypegenerator background animation
 */
 ?>
 <?php snippet('header') ?>
+
+  <!-- Background animation container -->
+  <div id="bg-animation" aria-hidden="true"></div>
+  <textarea id="textArea" style="display:none;"></textarea>
 
   <!-- Hero Section -->
   <section class="hero">
@@ -35,11 +39,6 @@
           <span class="hero-stat-label">CMS</span>
         </div>
       </div>
-    </div>
-
-    <!-- HUD decorative element -->
-    <div class="hero-hud" aria-hidden="true">
-      <div class="hud-circle"></div>
     </div>
   </section>
 

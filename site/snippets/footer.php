@@ -29,5 +29,19 @@
     '@auto'
   ]) ?>
 
+  <?php if ($page->template()->name() === 'home'): ?>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+  <script src="<?= url('assets/js/textures.js') ?>"></script>
+  <script src="<?= url('assets/js/circ.js') ?>"></script>
+  <script src="<?= url('assets/js/m_grfx.js') ?>"></script>
+  <script src="<?= url('assets/js/m_ring.js') ?>"></script>
+  <script src="<?= url('assets/js/m_cloud.js') ?>"></script>
+  <script src="<?= url('assets/js/m_cosmic.js') ?>"></script>
+  <script src="<?= url('assets/js/m_sphere.js') ?>"></script>
+  <script src="<?= url('assets/js/update.js') ?>"></script>
+  <script src="<?= url('assets/js/sketch_clutter.js') ?>"></script>
+  <?php endif ?>
+
 </body>
 </html>

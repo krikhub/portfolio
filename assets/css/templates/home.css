@@ -10,22 +10,26 @@
   flex-direction: column;
   justify-content: center;
   padding: 4rem 0 3rem;
-  overflow: hidden;
+  z-index: 2;
 }
 
-/* Subtle grid background */
-.hero::after {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.025) 1px, transparent 1px);
-  background-size: 60px 60px;
-  pointer-events: none;
-  opacity: 0.6;
+/* Background animation */
+#bg-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
 }
 
+#bg-animation canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Hero content above animation */
 .hero-content {
   position: relative;
   z-index: 2;
@@ -90,49 +94,6 @@
   border-color: var(--color-text);
   color: var(--color-text);
   text-shadow: none;
-}
-
-/* HUD decorative — more visible */
-.hero-hud {
-  position: absolute;
-  top: 50%;
-  right: -2rem;
-  transform: translateY(-50%);
-  z-index: 1;
-  opacity: 0.06;
-  pointer-events: none;
-}
-
-.hud-circle {
-  width: 420px;
-  height: 420px;
-  border: 1px solid var(--color-text);
-  border-radius: 50%;
-  position: relative;
-  animation: hudRotate 40s linear infinite;
-}
-.hud-circle::before {
-  content: '';
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  width: 280px; height: 280px;
-  border: 1px solid var(--color-text);
-  border-radius: 50%;
-}
-.hud-circle::after {
-  content: '';
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  width: 140px; height: 140px;
-  border: 1px solid var(--color-text);
-  border-radius: 50%;
-}
-
-@keyframes hudRotate {
-  from { transform: translateY(-50%) rotate(0deg); }
-  to { transform: translateY(-50%) rotate(360deg); }
 }
 
 /* Stats bar */
@@ -250,5 +211,5 @@
 @media screen and (max-width: 768px) {
   .hero { min-height: 65vh; padding: 3rem 0 2rem; }
   .hero-stats { gap: 1.5rem; flex-wrap: wrap; }
-  .hero-hud { display: none; }
+  #bg-animation { display: none; }
 }
