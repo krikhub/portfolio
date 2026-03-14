@@ -50,7 +50,7 @@
   --font-family-display: var(--font-family-sans);
 
   /* Spacing */
-  --padding: 1.5rem;
+  --padding: 1.25rem;
   --grid-gap: 1.5rem;
 
   /* Code colors */
@@ -99,7 +99,7 @@ body::before {
   z-index: 1;
   background: repeating-linear-gradient(
     0deg,
-    transparent,
+    transparent
     transparent 2px,
     rgba(0, 0, 0, 0.008) 2px,
     rgba(0, 0, 0, 0.008) 4px
@@ -161,7 +161,7 @@ a, button, input, textarea, select { cursor: none; }
   justify-content: space-between;
   align-items: center;
   margin-bottom: 0;
-  padding: 1.5rem 0;
+  padding: 0.75rem 0;
 }
 
 .logo {
@@ -277,10 +277,14 @@ a, button, input, textarea, select { cursor: none; }
     position: relative;
     z-index: 10;
     background: transparent;
-    padding: 0.75rem 0 1.5rem;
+    padding: 1rem 0 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  body:not(:has(.hero)) .header {
+    padding-bottom: 3rem;
   }
 
   /* Mobile header bar — outside site-wrapper */
@@ -305,6 +309,14 @@ a, button, input, textarea, select { cursor: none; }
 
   .mobile-header-bar .burger {
     display: flex;
+  }
+
+  .main {
+    padding-top: 2.5rem;
+  }
+
+  body:has(.hero) .main {
+    padding-top: 0;
   }
 }
 
@@ -398,7 +410,7 @@ a, button, input, textarea, select { cursor: none; }
 
 /* Extra top spacing on subpages (home has hero, so no extra needed) */
 .main {
-  padding-top: 1.5rem;
+  padding-top: 0.5rem;
 }
 body:has(.hero) .main {
   padding-top: 0;
