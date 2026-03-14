@@ -74,6 +74,18 @@
 <textarea id="textArea" style="display:none;"></textarea>
 <?php endif ?>
 
+<!-- Mobile header bar — outside site-wrapper for correct z-index -->
+<div class="mobile-header-bar">
+  <a class="logo" href="<?= $site->url() ?>">
+    <?= $site->title()->esc() ?>
+  </a>
+  <button class="burger" aria-label="Menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</div>
+
 <!-- Mobile overlay menu — outside site-wrapper for correct z-index -->
 <nav class="menu-overlay" id="mobileMenu" role="navigation">
   <div class="menu-overlay-inner">

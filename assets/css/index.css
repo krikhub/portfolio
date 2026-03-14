@@ -252,25 +252,59 @@ a, button, input, textarea, select { cursor: none; }
 .menu-social { display: flex; }
 .menu-mobile-icons { display: none; }
 
+/* Mobile header bar — hidden on desktop */
+.mobile-header-bar {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
-  .burger { display: flex; }
+  .burger {
+     display: flex;
+     padding-top: 0.5rem;
+    
+    }
 
   /* Hide desktop nav on mobile */
   .menu { display: none; }
 
+  /* Hide the in-wrapper header elements on mobile */
+  .header .logo,
+  .header .burger {
+    display: none;
+  }
+
   .header {
+    position: relative;
+    z-index: 10;
+    background: transparent;
+    padding: 0.75rem 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Mobile header bar — outside site-wrapper */
+  .mobile-header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 100002;
-    background: var(--color-bg);
+    z-index: 100003;
     padding: 0.75rem var(--padding);
+    background: transparent;
+    pointer-events: none;
   }
 
-  /* Offset content for fixed header */
-  .main {
-    padding-top: 3.5rem;
+  .mobile-header-bar .logo,
+  .mobile-header-bar .burger {
+    pointer-events: auto;
+  }
+
+  .mobile-header-bar .burger {
+    display: flex;
   }
 }
 
