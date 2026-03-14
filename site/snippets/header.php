@@ -51,9 +51,17 @@
     'assets/css/prism.css',
     'assets/css/lightbox.css',
     'assets/css/slider.css',
+    'assets/css/templates/freelancer.css',
+    'assets/css/templates/work.css',
+    'assets/css/templates/about.css',
     'assets/css/index.css',
     '@auto'
   ]) ?>
+
+  <!-- Cache bust -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
 
   <link rel="shortcut icon" type="image/x-icon" href="<?= url('favicon.ico') ?>?v=4">
 </head>

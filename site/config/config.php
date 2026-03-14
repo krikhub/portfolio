@@ -13,6 +13,13 @@ return [
     'panel' => [
         'language' => 'de'
     ],
+    
+    // Cache deaktivieren für saubere Deployments
+    'cache' => [
+        'pages' => [
+            'active' => false
+        ]
+    ],
 
     // Freelancer-Formular: Empfänger-E-Mail
     'freelancer.email' => 'info@alexanderkrikun.de',  // Hier deine E-Mail-Adresse eintragen
