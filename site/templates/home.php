@@ -8,6 +8,7 @@
 
   <!-- Background animation container -->
   <div id="bg-animation" aria-hidden="true"></div>
+  <div class="blur-overlay" aria-hidden="true"></div>
   <textarea id="textArea" style="display:none;"></textarea>
 
   <!-- Hero Section -->
