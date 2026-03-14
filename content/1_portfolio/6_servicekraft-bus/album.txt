@@ -2,7 +2,7 @@ Title: Servicekraft Bus
 
 ----
 
-Cover: - 'file://n3shf4xe97rza2kt'
+Cover: - file://n3shf4xe97rza2kt
 
 ----
 

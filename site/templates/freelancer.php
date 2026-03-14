@@ -87,6 +87,9 @@ snippet('header');
     <?php if (!$success): ?>
     <header class="intro">
         <h1><?= $page->headline()->or('Freelancer-Anfrage') ?></h1>
+        <?php if ($page->text()->isNotEmpty()): ?>
+            <p><?= $page->text() ?></p>
+        <?php endif ?>
         <?php if ($page->subheadline()->isNotEmpty()): ?>
             <p><?= $page->subheadline() ?></p>
         <?php endif ?>

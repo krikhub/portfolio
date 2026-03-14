@@ -2,7 +2,7 @@ Title: Kaiserstuhl Lavendel
 
 ----
 
-Cover: - 'file://k4vjvhgn4gmwinst'
+Cover: - file://k4vjvhgn4gmwinst
 
 ----
 

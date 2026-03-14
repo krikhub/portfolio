@@ -93,6 +93,31 @@
     });
   });
 
+  // --- Work list items ---
+  gsap.utils.toArray('.work-item').forEach(function (el, i) {
+    gsap.from(el, {
+      scrollTrigger: {
+        trigger: el,
+        start: 'top 92%'
+      },
+      y: 15,
+      opacity: 0,
+      duration: 0.5,
+      delay: i * 0.05,
+      ease: ease
+    });
+  });
+
+  var workHeader = document.querySelector('.work-header');
+  if (workHeader) {
+    gsap.from(workHeader, {
+      y: 20,
+      opacity: 0,
+      duration: 0.7,
+      ease: ease
+    });
+  }
+
   // --- Album gallery images ---
   gsap.utils.toArray('.album-gallery li').forEach(function (li, i) {
     gsap.from(li, {
@@ -122,8 +147,9 @@
     });
   });
 
-  // --- Intro text blocks ---
+  // --- Intro text blocks (exclude form intros – they have their own animation) ---
   gsap.utils.toArray('.intro').forEach(function (el) {
+    if (el.closest('.freelancer-form')) return;
     gsap.from(el, {
       scrollTrigger: {
         trigger: el,

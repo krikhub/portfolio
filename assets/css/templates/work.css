@@ -1,0 +1,143 @@
+/* ============================================
+   WORK / PORTFOLIO — Fine-line Design
+   ============================================ */
+
+.work-header {
+  padding: 2rem 0 1.5rem;
+}
+
+.work-title {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: var(--color-white);
+  line-height: 1.2;
+}
+
+.work-subtitle {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--color-text-dim);
+  line-height: 1.5;
+}
+
+/* Project list */
+
+.work-list {
+  border-top: 1px solid var(--color-border);
+}
+
+.work-item {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.work-item a {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.25rem 0;
+  color: var(--color-text);
+  transition: background 0.2s ease;
+}
+
+.work-item a:hover {
+  background: var(--color-bg-elevated);
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  margin: 0 -0.75rem;
+}
+
+.work-item-info {
+  display: flex;
+  align-items: baseline;
+  gap: 1.25rem;
+  min-width: 0;
+}
+
+.work-item-index {
+  font-family: var(--font-family-mono);
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+}
+
+.work-item-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.work-item-title {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-text);
+  transition: color 0.2s ease;
+}
+
+.work-item a:hover .work-item-title {
+  color: var(--color-accent);
+}
+
+.work-item-desc {
+  font-size: 0.8rem;
+  color: var(--color-text-dim);
+}
+
+.work-item-tags {
+  font-family: var(--font-family-mono);
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+/* Thumbnail */
+
+.work-item-thumb {
+  width: 5rem;
+  height: 3.5rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.work-item a:hover .work-item-thumb {
+  opacity: 1;
+}
+
+.work-item-thumb img {
+  width: 5rem;
+  height: 3.5rem;
+  object-fit: cover;
+  display: block;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+  .work-item a {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .work-item-info {
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+  }
+
+  .work-item-tags {
+    margin-left: 0;
+    width: 100%;
+    padding-left: 2rem;
+  }
+
+  .work-item-thumb {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+  }
+}

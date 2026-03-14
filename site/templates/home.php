@@ -45,13 +45,6 @@
 
 </main>
 
-<!-- Video as visual divider -->
-<div class="home-video">
-  <video autoplay muted loop playsinline>
-    <source src="<?= url('assets/video/hero-video.mp4') ?>" type="video/mp4">
-  </video>
-</div>
-
 <main class="main">
 
 <?php snippet('footer') ?>

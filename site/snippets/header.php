@@ -1,6 +1,6 @@
 <?php
 /*
-  Header snippet - Marathon Sci-Fi Design
+  Header snippet - Clean Design
 */
 ?>
 <!DOCTYPE html>
@@ -59,6 +59,27 @@
 </head>
 <body>
 
+<!-- Mobile overlay menu — outside site-wrapper for correct z-index -->
+<nav class="menu-overlay" id="mobileMenu" role="navigation">
+  <div class="menu-overlay-inner">
+    <div class="menu-links">
+      <?php foreach ($site->children()->listed() as $item): ?>
+      <a <?php e($item->isOpen(), 'aria-current="page"') ?> href="<?= $item->url() ?>"><?= $item->title()->esc() ?></a>
+      <?php endforeach ?>
+    </div>
+    <div class="menu-mobile-icons">
+      <a href="https://github.com/krikhub" class="menu-icon-link" aria-label="Github">
+        <?= svg('assets/icons/github.svg') ?>
+      </a>
+      <a href="https://de.linkedin.com/in/alexander-krikun-905a24231" class="menu-icon-link" aria-label="LinkedIn">
+        <?= svg('assets/icons/linkedin.svg') ?>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<div class="site-wrapper">
+
   <header class="header">
     <a class="logo" href="<?= $site->url() ?>">
       <?= $site->title()->esc() ?>
@@ -78,14 +99,6 @@
       </div>
       <div class="menu-social">
         <?php snippet('social') ?>
-      </div>
-      <div class="menu-mobile-icons">
-        <a href="https://github.com/krikhub" class="menu-icon-link" aria-label="Github">
-          <?= svg('assets/icons/github.svg') ?>
-        </a>
-        <a href="https://de.linkedin.com/in/alexander-krikun-905a24231" class="menu-icon-link" aria-label="LinkedIn">
-          <?= svg('assets/icons/linkedin.svg') ?>
-        </a>
       </div>
     </nav>
   </header>
