@@ -1,12 +1,6 @@
 <?php
 /*
-  Snippets are a great way to store code snippets for reuse
-  or to keep your templates clean.
-
-  The note snippet renders an excerpt of a blog article.
-
-  More about snippets:
-  https://getkirby.com/docs/guide/templates/snippets
+  Note excerpt snippet - Marathon Sci-Fi Design
 */
 ?>
 <article class="note-excerpt">
@@ -17,7 +11,6 @@
           <img src="<?= $cover->crop(320, 180)->url() ?>" alt="<?= $cover->alt()->esc() ?>">
         <?php endif ?>
       </figure>
-
       <h2 class="note-excerpt-title"><?= $note->title()->esc() ?></h2>
       <time class="note-excerpt-date" datetime="<?= $note->published('c') ?>"><?= $note->published() ?></time>
     </header>

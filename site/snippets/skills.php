@@ -1,8 +1,9 @@
 <?php if ($page->showSkills()->toBool() && $skills = $page->skills()->toStructure()): ?>
 <section class="skills-section">
+  <div class="hud-label" style="margin-bottom: 1rem;">Capabilities</div>
   <div class="skills-grid">
     <?php foreach ($skills as $category): ?>
-    <div class="skills-category">
+    <div class="skills-category hud-corner">
       <h3 class="skills-category-title"><?= $category->category()->esc() ?></h3>
       <ul class="skills-list">
         <?php foreach ($category->items()->toStructure() as $skill): ?>
@@ -20,29 +21,17 @@
 </section>
 
 <script>
-// Animate skill bars when they come into view
-const observerOptions = {
-  threshold: 0.2,
-  rootMargin: '0px 0px -50px 0px'
-};
-
+const observerOptions = { threshold: 0.2, rootMargin: '0px 0px -50px 0px' };
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      const bars = entry.target.querySelectorAll('.skill-bar');
-      bars.forEach(bar => {
-        const level = bar.getAttribute('data-level');
-        setTimeout(() => {
-          bar.style.width = level + '%';
-        }, 100);
+      entry.target.querySelectorAll('.skill-bar').forEach(bar => {
+        setTimeout(() => { bar.style.width = bar.getAttribute('data-level') + '%'; }, 100);
       });
       observer.unobserve(entry.target);
     }
   });
 }, observerOptions);
-
-document.querySelectorAll('.skills-section').forEach(section => {
-  observer.observe(section);
-});
+document.querySelectorAll('.skills-section').forEach(s => observer.observe(s));
 </script>
 <?php endif ?>

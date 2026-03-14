@@ -1,35 +1,51 @@
 <?php
 /*
-  Templates render the content of your pages.
-
-  They contain the markup together with some control structures
-  like loops or if-statements. The `$page` variable always
-  refers to the currently active page.
-
-  To fetch the content from each field we call the field name as a
-  method on the `$page` object, e.g. `$page->title()`.
-
-  This home template renders content from others pages, the children of
-  the `photography` page to display a nice gallery grid.
-
-  Snippets like the header and footer contain markup used in
-  multiple templates. They also help to keep templates clean.
-
-  More about templates: https://getkirby.com/docs/guide/templates/basics
+  Home template - Clean Minimal Design
+  Video as visual divider after hero
 */
-
 ?>
 <?php snippet('header') ?>
-  <?php snippet('intro') ?>
-  
-  <!-- Freelancer CTA Buttons -->
-  <div class="cta-buttons" style="margin-top: 2rem; margin-bottom: 3rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-    <a href="<?= url('freelancer-anfrage') ?>" class="cta">Freelancer buchen</a>
-    <a href="<?= url('website-projekt-anfragen') ?>" class="cta">Website-Projekt anfragen</a>
-  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-tag">Freelance Webentwickler</div>
+      <h1 class="hero-title">
+        <?= $page->headline()->or('Flexibel, zuverlässig, einsatzbereit')->esc() ?>
+      </h1>
+      <p class="hero-subtitle">
+        <?= $page->subheadline()->or('Unterstützung für Webprojekte auf Abruf oder über mehrere Wochen – PHP, React, WordPress & mehr.')->esc() ?>
+      </p>
+      <div class="hero-actions">
+        <a href="<?= url('freelancer-anfrage') ?>" class="cta">Freelancer buchen</a>
+        <a href="<?= url('website-projekt-anfragen') ?>" class="hero-cta-secondary">Website-Projekt anfragen</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-value">PHP / Laravel</span>
+          <span class="hero-stat-label">Primary Stack</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-value">React / Next.js</span>
+          <span class="hero-stat-label">Frontend</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-value">WordPress / Kirby / Statamic</span>
+          <span class="hero-stat-label">CMS</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- HUD decorative element -->
+    <div class="hero-hud" aria-hidden="true">
+      <div class="hud-circle"></div>
+    </div>
+  </section>
 
 </main>
 
+<!-- Video as visual divider -->
 <div class="home-video">
   <video autoplay muted loop playsinline>
     <source src="<?= url('assets/video/hero-video.mp4') ?>" type="video/mp4">
@@ -39,5 +55,3 @@
 <main class="main">
 
 <?php snippet('footer') ?>
-
-

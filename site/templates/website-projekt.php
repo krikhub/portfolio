@@ -102,7 +102,7 @@ snippet('header');
             <h2>Vielen Dank für Ihre Anfrage!</h2>
             <p>Ich habe Ihre Nachricht erhalten und melde mich zeitnah bei Ihnen.</p>
             <?php if (in_array($_SERVER['HTTP_HOST'], ['localhost', '127.0.0.1']) || strpos($_SERVER['HTTP_HOST'], 'localhost:') === 0): ?>
-                <p><small style="color: var(--color-grey);">Hinweis: Lokal wurde die Anfrage in site/logs/website-projekt-anfragen.log gespeichert.</small></p>
+                <p><small style="color: var(--color-text-dim);">Hinweis: Lokal wurde die Anfrage in site/logs/website-projekt-anfragen.log gespeichert.</small></p>
             <?php endif ?>
             <a href="<?= $site->url() ?>" class="cta margin-l">Zurück zur Startseite</a>
         </div>

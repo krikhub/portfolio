@@ -1,25 +1,16 @@
 <?php
 /*
-  Snippets are a great way to store code snippets for reuse
-  or to keep your templates clean.
-
-  This header snippet is reused in all templates.
-  It fetches information from the `site.txt` content file
-  and contains the site navigation.
-
-  More about snippets:
-  https://getkirby.com/docs/guide/templates/snippets
+  Header snippet - Marathon Sci-Fi Design
 */
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
 
   <?php
-  // SEO Meta Tags
   $metaTitle = $page->metaTitle()->isNotEmpty() 
     ? $page->metaTitle()->esc() 
     : $page->title()->esc() . ' | ' . $site->title()->esc();
@@ -36,7 +27,6 @@
   <title><?= $metaTitle ?></title>
   <meta name="description" content="<?= $metaDescription ?>">
 
-  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="<?= $page->url() ?>">
   <meta property="og:title" content="<?= $metaTitle ?>">
@@ -45,7 +35,6 @@
   <meta property="og:image" content="<?= $ogImage ?>">
   <?php endif ?>
 
-  <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="<?= $page->url() ?>">
   <meta property="twitter:title" content="<?= $metaTitle ?>">
@@ -54,13 +43,10 @@
   <meta property="twitter:image" content="<?= $ogImage ?>">
   <?php endif ?>
 
-  <?php
-  /*
-    Stylesheets can be included using the `css()` helper.
-    Kirby also provides the `js()` helper to include script file.
-    More Kirby helpers: https://getkirby.com/docs/reference/templates/helpers
-  */
-  ?>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
   <?= css([
     'assets/css/prism.css',
     'assets/css/lightbox.css',
@@ -69,13 +55,6 @@
     '@auto'
   ]) ?>
 
-  <?php
-  /*
-    The `url()` helper is a great way to create reliable
-    absolute URLs in Kirby that always start with the
-    base URL of your site.
-  */
-  ?>
   <link rel="shortcut icon" type="image/x-icon" href="<?= url('favicon.ico') ?>?v=4">
 </head>
 <body>
@@ -91,7 +70,7 @@
       <span></span>
     </button>
 
-    <nav class="menu">
+    <nav class="menu" role="navigation">
       <div class="menu-links">
         <?php foreach ($site->children()->listed() as $item): ?>
         <a <?php e($item->isOpen(), 'aria-current="page"') ?> href="<?= $item->url() ?>"><?= $item->title()->esc() ?></a>

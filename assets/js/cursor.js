@@ -1,11 +1,8 @@
-// Custom Cursor with GSAP and Blend Mode
+// Custom Cursor - Marathon Sci-Fi Light
 (function() {
-  // Deaktiviere Cursor in Formularen
-  if (document.querySelector('.freelancer-form')) {
-    return;
-  }
+  if (document.querySelector('.freelancer-form')) return;
+  if ('ontouchstart' in window) return;
   
-  // Create cursor HTML
   const cursorHTML = `
     <div class="cursor">
       <div class="cursor__ball cursor__ball--big">
@@ -21,48 +18,29 @@
     </div>
   `;
   
-  // Add cursor to body
   document.body.insertAdjacentHTML('beforeend', cursorHTML);
   
   const $bigBall = document.querySelector('.cursor__ball--big');
   const $smallBall = document.querySelector('.cursor__ball--small');
   const $hoverables = document.querySelectorAll('a, button, input, textarea, select, [role="button"]');
   
-  // Move cursor on mouse move
   document.body.addEventListener('mousemove', onMouseMove);
   
-  // Add hover listeners
   $hoverables.forEach(el => {
     el.addEventListener('mouseenter', onMouseHover);
     el.addEventListener('mouseleave', onMouseHoverOut);
   });
   
-  // Move the cursor
   function onMouseMove(e) {
-    gsap.to($bigBall, {
-      duration: 0.4,
-      x: e.clientX - 15,
-      y: e.clientY - 15
-    });
-    gsap.to($smallBall, {
-      duration: 0.1,
-      x: e.clientX - 5,
-      y: e.clientY - 5
-    });
+    gsap.to($bigBall, { duration: 0.4, x: e.clientX - 15, y: e.clientY - 15 });
+    gsap.to($smallBall, { duration: 0.1, x: e.clientX - 5, y: e.clientY - 5 });
   }
   
-  // Hover an element
   function onMouseHover() {
-    gsap.to($bigBall, {
-      duration: 0.3,
-      scale: 2
-    });
+    gsap.to($bigBall, { duration: 0.3, scale: 2, opacity: 0.5 });
   }
   
   function onMouseHoverOut() {
-    gsap.to($bigBall, {
-      duration: 0.3,
-      scale: 1
-    });
+    gsap.to($bigBall, { duration: 0.3, scale: 1, opacity: 1 });
   }
 })();

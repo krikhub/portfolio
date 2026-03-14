@@ -1,24 +1,22 @@
 <?php
 /*
-  Snippets are a great way to store code snippets for reuse
-  or to keep your templates clean.
-
-  This footer snippet is reused in all templates.
-
-  More about snippets:
-  https://getkirby.com/docs/guide/templates/snippets
+  Footer snippet - Marathon Sci-Fi Design
 */
 ?>
   </main>
 
   <footer class="footer">
-    <nav class="footer-nav">
-      <a href="<?= page('impressum')?->url() ?? '#' ?>">Impressum</a>
-      <a href="<?= page('datenschutz')?->url() ?? '#' ?>">Datenschutz</a>
-    </nav>
+    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+      <nav class="footer-nav">
+        <a href="<?= page('impressum')?->url() ?? '#' ?>">Impressum</a>
+        <a href="<?= page('datenschutz')?->url() ?? '#' ?>">Datenschutz</a>
+      </nav>
+      <span class="hud-label" style="color: var(--color-text-muted);">© <?= date('Y') ?></span>
+    </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
   <?= js([
     'assets/js/burger.js',
     'assets/js/prism.js',

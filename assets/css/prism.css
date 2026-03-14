@@ -1,136 +1,59 @@
-/* PrismJS 1.19.0
-https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+json+markup-templating+php+yaml */
-/**
- * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
- * Based on https://github.com/chriskempson/tomorrow-theme
- * @author Rose Pritchard
- */
+/* ============================================
+   PRISM - CODE THEME (dark code blocks on light page)
+   ============================================ */
 
 code[class*="language-"],
 pre[class*="language-"] {
-  color: var(--color-code-white);
-	font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
-	font-size: 1em;
-	text-align: left;
-	white-space: pre;
-	word-spacing: normal;
-	word-break: normal;
-	word-wrap: normal;
-	line-height: 1.5;
-
-	-moz-tab-size: 4;
-	-o-tab-size: 4;
-	tab-size: 4;
-
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
-
+  color: #e0e0ec;
+  font-family: var(--font-family-mono, 'JetBrains Mono', 'SF Mono', monospace);
+  font-size: 0.9em;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.6;
+  tab-size: 4;
+  hyphens: none;
 }
 
-/* Code blocks */
 pre[class*="language-"] {
-	padding: 1rem;
-	margin: 0 0;
-	overflow: auto;
+  padding: 1.5rem;
+  margin: 0;
+  overflow: auto;
+  background: #1e1e2a;
+  border: 1px solid var(--color-border);
 }
 
-/* -----  Syntax Highlighting (Prism.js) ------------------------------------ */
-
-.token.punctuation {
-  color: var(--color-code-light-grey);
-}
-
-.token.comment,
-.token.doctype {
-  color: var(--color-code-comment);
-}
-
-.token.tag,
-.token.markup,
-.token.variable,
-.token.this,
-.token.selector,
-.token.key,
-.token.kirbytag-bracket,
-.token.prolog,
-.token.delimiter {
-  color: var(--color-code-red);
-}
-
-.token.constant,
-.token.number,
-.token.boolean,
-.token.boolean.important,
-.token.attr-name,
-.token.kirbytag-attr,
-.token.kirbytag-name,
-.token.entity,
-.token.bold,
-.token.bold > .punctuation {
-  color: var(--color-code-orange);
-}
-
-.token.keyword,
-.token.italic,
-.token.italic > .punctuation {
-  color: var(--color-code-purple);
-}
-
-.token.function {
-  color: var(--color-code-blue);
-}
-
-.token.operator,
-.token.title {
-  color: var(--color-code-aqua);
-}
-
-.token.string,
-.token.attr-value,
-.token.attr-value .punctuation,
-.token.list.punctuation {
-  color: var(--color-code-green);
-}
-
-.token.scope,
-.token.class-name,
-.token.property,
-.token.url {
-  color: var(--color-code-yellow);
-}
-
-/**
- * 1. Markdown list bullet.
- */
-.token.title,
-.token.kirbytag-bracket,
-.token.list.punctuation /* 1 */ {
-  font-weight: 700;
-}
-
-.token.title .punctuation {
-  color: inherit;
-}
-
-/**
- * 1. Markdown bold text
- */
-.token.bold /* 1 */ {
-  font-weight: bold;
-}
-
-.token.italic {
-  font-style: italic;
-}
+.token.punctuation { color: #b0b2c0; }
+.token.comment, .token.doctype { color: #8a8c9a; }
+.token.tag, .token.markup, .token.variable, .token.this,
+.token.selector, .token.key, .token.kirbytag-bracket,
+.token.prolog, .token.delimiter { color: #e06c75; }
+.token.constant, .token.number, .token.boolean,
+.token.boolean.important, .token.attr-name,
+.token.kirbytag-attr, .token.kirbytag-name,
+.token.entity, .token.bold, .token.bold > .punctuation { color: #d19a66; }
+.token.keyword, .token.italic, .token.italic > .punctuation { color: #c678dd; }
+.token.function { color: #61afef; }
+.token.operator, .token.title { color: #56b6c2; }
+.token.string, .token.attr-value,
+.token.attr-value .punctuation, .token.list.punctuation { color: #98c379; }
+.token.scope, .token.class-name, .token.property, .token.url { color: #e5c07b; }
+.token.title, .token.kirbytag-bracket, .token.list.punctuation { font-weight: 700; }
+.token.title .punctuation { color: inherit; }
+.token.bold { font-weight: bold; }
+.token.italic { font-style: italic; }
 
 .codeblock {
-  background: var(--color-black);
+  background: #1e1e2a;
+  border: 1px solid var(--color-border);
 }
 .codeblock figcaption {
-  color: var(--color-code-white);
-  padding: .5rem 1rem;
+  color: #8a8c9a;
+  padding: 0.5rem 1rem;
   font-family: var(--font-family-mono);
-  border-bottom: 1px solid #333;
+  font-size: 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  letter-spacing: 0.05em;
 }

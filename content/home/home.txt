@@ -2,11 +2,11 @@ Title: Home
 
 ----
 
-Headline: Freelance Webentwickler – flexibel, zuverlässig, einsatzbereit
+Headline: Webentwicklung für Agenturen und Unternehmen
 
 ----
 
-Subheadline: Unterstützung für Webprojekte auf Abruf oder über mehrere Wochen – PHP, React, WordPress & mehr
+Subheadline: – kurzfristige Unterstützung oder komplette Umsetzung
 
 ----
 
@@ -18,7 +18,7 @@ Metadescription: Freelance Webentwickler für Agenturen & Unternehmen – kurzfr
 
 ----
 
-Ogimage: 
+Ogimage: []
 
 ----
 

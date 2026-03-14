@@ -1,38 +1,25 @@
 <?php
 /*
-  Templates render the content of your pages.
-
-  They contain the markup together with some control structures
-  like loops or if-statements. The `$page` variable always
-  refers to the currently active page.
-
-  To fetch the content from each field we call the field name as a
-  method on the `$page` object, e.g. `$page->title()`.
-
-  This template lists all all the subpages of the `phototography`
-  page with title and cover image.
-
-  Snippets like the header and footer contain markup used in
-  multiple templates. They also help to keep templates clean.
-
-  More about templates: https://getkirby.com/docs/guide/templates/basics
+  Photography/Portfolio template - Marathon Sci-Fi Design
 */
 ?>
 <?php snippet('header') ?>
+
+<div class="hud-label" style="margin-bottom: 0.75rem;">Portfolio</div>
 <?php snippet('intro') ?>
 
-<ul class="grid" style="--gutter: 1.5rem">
+<ul class="grid" style="--gutter: 1px">
   <?php foreach ($page->children()->listed() as $project): ?>
-  <li class="column" style="--columns: 3">
-    <a href="<?= $project->url() ?>">
+  <li class="column" style="--columns: 4">
+    <a href="<?= $project->url() ?>" style="display: block; position: relative; overflow: hidden; border: 1px solid var(--color-border);">
       <figure>
-        <span class="img" style="--w:4;--h:4">
+        <span class="img" style="--w:1;--h:1">
           <?php if ($cover = $project->cover()): ?>
             <img src="<?= $cover->crop(400, 400)->url() ?>" alt="<?= $cover->alt()->esc() ?>">
           <?php endif ?>
         </span>
-        <figcaption class="img-caption">
-          <?= $project->title()->esc() ?>
+        <figcaption style="padding: 1rem; background: var(--color-bg-card); border-top: 1px solid var(--color-border);">
+          <span style="font-size: 0.8rem; color: var(--color-text); letter-spacing: 0.03em;"><?= $project->title()->esc() ?></span>
         </figcaption>
       </figure>
     </a>

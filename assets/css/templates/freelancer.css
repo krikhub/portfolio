@@ -35,7 +35,7 @@ body:has(.freelancer-form) select {
 
 .freelancer-form .intro p {
   font-size: 0.875rem;
-  color: var(--color-grey);
+  color: var(--color-text-dim);
   line-height: 1.5;
 }
 
@@ -44,7 +44,7 @@ body:has(.freelancer-form) select {
 .form-progress {
   margin: 2rem 0;
   padding: 1.5rem 0;
-  border-bottom: 1px solid var(--color-light);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .progress-steps {
@@ -63,7 +63,7 @@ body:has(.freelancer-form) select {
   left: 3rem;
   right: 3rem;
   height: 1px;
-  background: var(--color-light);
+  background: var(--color-border-strong);
   z-index: 0;
 }
 
@@ -81,9 +81,9 @@ body:has(.freelancer-form) select {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
-  background: var(--color-white);
-  border: 2px solid var(--color-light);
-  color: var(--color-grey);
+  background: #fff;
+  border: 2px solid var(--color-border-strong);
+  color: var(--color-text-dim);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,15 +93,15 @@ body:has(.freelancer-form) select {
 }
 
 .progress-step.active .step-number {
-  background: var(--color-black);
-  color: var(--color-white);
-  border-color: var(--color-black);
+  background: var(--color-accent);
+  color: #fff;
+  border-color: var(--color-accent);
 }
 
 .progress-step.completed .step-number {
-  background: var(--color-black);
-  color: var(--color-white);
-  border-color: var(--color-black);
+  background: var(--color-accent);
+  color: #fff;
+  border-color: var(--color-accent);
 }
 
 .progress-step.completed .step-number::after {
@@ -110,13 +110,13 @@ body:has(.freelancer-form) select {
 
 .step-label {
   font-size: 0.7rem;
-  color: var(--color-grey);
+  color: var(--color-text-dim);
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 
 .progress-step.active .step-label {
-  color: var(--color-black);
+  color: var(--color-text);
   font-weight: 600;
 }
 
@@ -146,6 +146,7 @@ body:has(.freelancer-form) select {
   margin-bottom: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  color: var(--color-text);
 }
 
 /* Form Fields */
@@ -165,7 +166,7 @@ body:has(.freelancer-form) select {
   margin-bottom: 0.35rem;
   font-size: 0.8rem;
   font-weight: 500;
-  color: var(--color-black);
+  color: var(--color-text);
 }
 
 .form-field input[type="text"],
@@ -177,18 +178,21 @@ body:has(.freelancer-form) select {
   width: 100%;
   padding: 0.6rem 0.75rem;
   border: 1px solid #ddd;
-  background: var(--color-white);
+  background: #fff;
+  color: var(--color-text);
   font-family: inherit;
   font-size: 0.875rem;
   transition: border-color 0.2s ease;
   box-sizing: border-box;
+  border-radius: 0;
+  -webkit-appearance: none;
 }
 
 .form-field input:focus,
 .form-field select:focus,
 .form-field textarea:focus {
   outline: none;
-  border-color: var(--color-black);
+  border-color: var(--color-accent);
 }
 
 .form-field input.error,
@@ -202,11 +206,18 @@ body:has(.freelancer-form) select {
   min-height: 6rem;
 }
 
+.form-field select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  padding-right: 2rem;
+}
+
 .field-hint {
   display: block;
   margin-top: 0.2rem;
   font-size: 0.75rem;
-  color: var(--color-grey);
+  color: var(--color-text-dim);
 }
 
 /* Checkbox Group */
@@ -222,15 +233,15 @@ body:has(.freelancer-form) select {
   align-items: center;
   gap: 0.4rem;
   padding: 0.5rem 0.6rem;
-  background: var(--color-light);
-  border: 1px solid var(--color-light);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
   font-size: 0.8rem;
   transition: border-color 0.2s ease;
   cursor: pointer;
 }
 
 .checkbox-label:hover {
-  border-color: var(--color-black);
+  border-color: var(--color-accent);
 }
 
 .checkbox-label input[type="checkbox"] {
@@ -250,22 +261,22 @@ body:has(.freelancer-form) select {
   gap: 0.75rem;
   margin-top: 2rem;
   padding-top: 1.5rem;
-  border-top: 1px solid var(--color-light);
+  border-top: 1px solid var(--color-border);
 }
 
 .btn-prev {
   padding: 0.6rem 1.25rem;
   background: transparent;
-  border: 1px solid var(--color-black);
-  color: var(--color-black);
+  border: 1px solid var(--color-border-strong);
+  color: var(--color-text);
   font-size: 0.8rem;
   font-weight: 500;
   transition: all 0.2s ease;
 }
 
 .btn-prev:hover {
-  background: var(--color-black);
-  color: var(--color-white);
+  background: var(--color-accent);
+  color: #fff;
 }
 
 .btn-next,
@@ -290,7 +301,7 @@ body:has(.freelancer-form) select {
 
 .form-success p {
   margin-bottom: 1.5rem;
-  color: var(--color-grey);
+  color: var(--color-text-dim);
   font-size: 0.875rem;
 }
 
@@ -337,12 +348,4 @@ body:has(.freelancer-form) select {
     left: 2rem;
     right: 2rem;
   }
-}
-
-/* CTA Buttons on Homepage */
-
-.cta-buttons {
-  display: flex;
-  gap: 0.75rem;
-  flex-wrap: wrap;
 }
