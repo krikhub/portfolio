@@ -68,9 +68,10 @@
 <body>
 
 <?php if ($page->template()->name() === 'home'): ?>
-<!-- Background animation — outside site-wrapper -->
+<!-- Background animation — outside site-wrapper (desktop only) -->
 <div id="bg-animation" aria-hidden="true"></div>
 <div class="blur-overlay" aria-hidden="true"></div>
+<div class="mobile-hero-bg" aria-hidden="true"></div>
 <textarea id="textArea" style="display:none;"></textarea>
 <?php endif ?>
 

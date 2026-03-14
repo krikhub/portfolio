@@ -2,6 +2,14 @@
 /////////////////////////////       TEXT
 //////////////////////////////////////////////
 
+// Mobile scale factor — recalculated in setup() when windowWidth is available
+var _mobileScale = 1;
+function mobileSize(val) { return val * _mobileScale; }
+
+function _updateMobileScale() {
+  _mobileScale = (windowWidth < 768) ? 0.25 : 1;
+}
+
 function pgTexture1(inp, p){
   var pHorz = pgTextSize * 2/3;
   var pVer = pgTextSize * 4/3;
@@ -58,7 +66,7 @@ function grabRandomColor(){
 //////////////////////////////////////////////
 
 function pgG_star1(g){  // soft sun crest
-  var thisR = 200;
+  var thisR = mobileSize(200);
   var thisIter = 28;
   var thisAng = 2*PI/thisIter;
 
@@ -87,7 +95,7 @@ function pgG_star1(g){  // soft sun crest
 }
 
 function pgG_star2(g){  // hard eight point
-  var thisR = 300;
+  var thisR = mobileSize(300);
   var thisIter = 16;
   var thisAng = 2*PI/thisIter;
 
@@ -122,7 +130,7 @@ function pgG_star2(g){  // hard eight point
 }
 
 function pgG_star3(g){  // 9 lines
-  var thisR = 150;
+  var thisR = mobileSize(150);
   var thisIter = 18;
   var thisAng = 2*PI/thisIter;
 
@@ -146,7 +154,7 @@ function pgG_star3(g){  // 9 lines
 }
 
 function pgG_star4(g){  // soft sun crest
-  var thisR = 300;
+  var thisR = mobileSize(300);
   var thisIter = 28;
   var thisAng = 2*PI/thisIter;
 
@@ -178,8 +186,8 @@ function pgG_star4(g){  // soft sun crest
 //////////////////////////////////////////////
 
 function pgG_spray1(g){
-  var thisSize = 1200;
-  var thisIter = 1000;
+  var thisSize = mobileSize(1200);
+  var thisIter = _mobileScale < 1 ? 400 : 1000;
 
   var rColor5 = grabRandomColor();
 
@@ -204,8 +212,8 @@ function pgG_spray1(g){
 }
 
 function pgG_spray2(g){
-  var thisSize = 800;
-  var thisIter = 1500;
+  var thisSize = mobileSize(800);
+  var thisIter = _mobileScale < 1 ? 600 : 1500;
 
   var rColor6 = grabRandomColor();
 
@@ -244,7 +252,7 @@ function pgG_spray2(g){
 //////////////////////////////////////////////
 
 function pgG_gradient1(g){
-  var thisSize = round(random(800,1400));
+  var thisSize = round(random(mobileSize(800), mobileSize(1400)));
   var thisIter = thisSize/10;
 
   var rColor7 = grabRandomColor();
@@ -267,7 +275,7 @@ function pgG_gradient1(g){
 }
 
 function pgG_gradient2(g){
-  var thisSize = round(random(250,600));
+  var thisSize = round(random(mobileSize(250), mobileSize(600)));
   var thisIter = round(thisSize * 0.25);
 
   var rColor8 = bkgdColor;
@@ -290,7 +298,7 @@ function pgG_gradient2(g){
 }
 
 function pgG_gradient3(g){
-  var thisSize = 350;
+  var thisSize = mobileSize(350);
   var thisIter = 150;
 
   pg_grfx[g] = createGraphics(thisSize, thisSize);
@@ -313,7 +321,7 @@ function pgG_gradient3(g){
 }
 
 function pgG_gradient4(g){
-  var thisSize = round(random(400,800));
+  var thisSize = round(random(mobileSize(400), mobileSize(800)));
   var thisIter = round(thisSize * 0.25);
 
   pg_grfx[g] = createGraphics(thisSize, thisSize);
@@ -340,7 +348,7 @@ function pgG_gradient4(g){
 }
 
 function pgG_gradient5(g){
-  var thisSize = round(random(800,1400));
+  var thisSize = round(random(mobileSize(800), mobileSize(1400)));
   var thisIter = thisSize/10;
 
   var rColor13 = grabRandomColor();
@@ -367,7 +375,7 @@ function pgG_gradient5(g){
 //////////////////////////////////////////////
 
 function pgG_scribble1(g){
-  var thisSize = 2000;
+  var thisSize = mobileSize(2000);
   var thisIter = 12;
 
   var rColor10 = grabRandomColor();

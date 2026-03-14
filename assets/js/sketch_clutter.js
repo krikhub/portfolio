@@ -71,6 +71,9 @@ function setup(){
   frameRate(30);
   textureMode(NORMAL);
 
+  // Update mobile scale now that windowWidth is available
+  _updateMobileScale();
+
   // Set text from hidden textarea
   setText();
 
@@ -83,7 +86,9 @@ function setup(){
 
   Composite.add(engine.world, mConstraint);
 
-  for(var g = 0; g < 16; g++){
+  var _isMobile = (windowWidth < 768);
+  var grfxCount = _isMobile ? 5 : 16;
+  for(var g = 0; g < grfxCount; g++){
     generateGrfx();
   }
 }

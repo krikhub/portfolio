@@ -221,11 +221,16 @@
   .home-grid a { padding-bottom: 52.65%; }
 }
 
-@media screen and (max-width: 400px) {
-  .hero { min-height: 65vh;  }
+/* Mobile hero background — hidden on desktop */
+.mobile-hero-bg {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .hero { min-height: 65vh; }
   .hero-stats { gap: 1.5rem; flex-wrap: wrap; }
 
   .blur-overlay {
-    background: transparent;
+    background: rgba(255, 255, 255, 0.6);
   }
 }
